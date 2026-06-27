@@ -6,6 +6,8 @@ It demonstrates real-world cloud architecture using EC2, RDS, S3, IAM, and VPC.
 
 Users can add employee details and upload profile images, which are stored securely in AWS S3, while structured data is stored in AWS RDS (MySQL). The application is hosted on an EC2 instance using Flask.
 
+---
+
 ##  AWS Architecture
 
 This project uses the following AWS services:
@@ -17,6 +19,8 @@ This project uses the following AWS services:
 - 🔐 IAM (Access Control & Permissions)
 - ⚖️ Security Groups (Traffic Control)
 
+---
+
 ##  Features
 
 - Add employee details (Name, Email, Department, Designation)
@@ -25,6 +29,8 @@ This project uses the following AWS services:
 - Store images securely in AWS S3 bucket
 - Display employee list with images
 - Fully cloud-hosted and scalable application
+
+---
 
 ##  Tech Stack
 
@@ -36,34 +42,36 @@ This project uses the following AWS services:
 - AWS IAM
 - AWS VPC
 
-##  Screenshots
+---
+
+##  screenshots
 
 ###  Application Homepage
 ![Homepage](screenshots/homepage.png)
 
 ---
 
-### 🗄️ AWS RDS Database
+###  AWS RDS Database
 ![RDS](screenshots/rds.png)
 
 ---
 
-### 📂 S3 Bucket (Uploaded Images)
+###  S3 Bucket (Uploaded Images)
 ![S3 Bucket](screenshots/s3.png)
 
 ---
 
-### 🖥️ EC2 Instance Running Application
+###  EC2 Instance Running Application
 ![EC2](screenshots/ec2.png)
 
 ---
 
-### 🔐 IAM Role Configuration
+###  IAM Role Configuration
 ![IAM](screenshots/iam.png)
 
 ---
 
-### 🌐 VPC Architecture Setup
+###  VPC Architecture Setup
 ![VPC](screenshots/vpc.png)
 
 ---
@@ -75,28 +83,3 @@ git clone <your-repo-url>
 cd employee-app
 pip install -r requirements.txt
 python app.py
-http://localhost:5000
-
-AWS Configuration Notes
-EC2 instance must have IAM role attached with S3 access
-Security Group must allow port 5000 inbound traffic
-RDS must allow EC2 access on port 3306
-S3 bucket must allow public read access for images
-VPC configured with public subnet for EC2 access
-
-Learning Outcome
-
-This project demonstrates:
-
-Cloud computing architecture using AWS
-Full-stack web application deployment
-Database integration with cloud services
-Object storage using S3
-Identity and access management (IAM)
-Networking using VPC and Security Groups
-
-
-Author
-
-Divya Vemulapalli
-
